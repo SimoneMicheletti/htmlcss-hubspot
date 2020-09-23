@@ -6,28 +6,63 @@
   padding: 0;
 }
 
-.container {
-  width: 60%;
-  margin: auto;
+a {
+  text-decoration: none;
 }
 
 .clearfix {
   content: '';
   display: table;
   clear: both;
+  width: 100%;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.ora-but {
+  color: white;
+  background-color: #ff7a59;
+  border-radius: 5px;
+  padding: 8px;
+  border: 2px solid #ff7a59;
+
 }
 
 /* REGOLE NAV */
 
-nav .container {
-  height: 50px;
-  border-width: 0 1px 0 1px;
-  border-style: solid;
-  border-color: black;
+.nav-top {
+  background-color: #f4f9fd;
+  padding: 15px 0;
+  border-bottom: 1px solid black;
 }
 
-.nav-top {
-  background-color: lightpink;
+#login {
+  color: #ff7a59;
+  background-color: white;
+  border: 2px solid #ff7a59;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 0 7px;
+}
+
+.nav-top-left , .nav-bottom-left {
+  float: left;
+}
+
+.nav-top-right , .nav-bottom-right{
+  float: right;
+}
+
+.nav-bottom-right>a {
+  display: inline-block;
+  padding: 15px;
+}
+
+.nav-bottom-left {
+  padding-top: 10px;
 }
 
 /* REGOLE HEADER */
@@ -67,10 +102,6 @@ header>.container {
 
 .section1-2 {
   margin: 30px 0;
-}
-
-.section1-3 {
-  width: 100%;
 }
 
 .white-box {
@@ -134,10 +165,6 @@ header>.container {
   padding: 30px 0;
 }
 
-.section3-top , .section3-bottom {
-  width: 100%;
-}
-
 .section3-top {
   margin-bottom: 30px;
 }
@@ -176,10 +203,6 @@ header>.container {
 footer {
   background-color: darkgrey;
   padding-top: 30px;
-}
-
-.footer-top {
-  width: 100%;
 }
 
 .footer-top>div {
