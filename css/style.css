@@ -9,7 +9,7 @@
 
 a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: inherit;
 }
@@ -37,11 +37,11 @@ a {
 
 .white-box {
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   border-radius: 10px;
 }
 
-.fas{
+.fa-check-circle{
   color: #ff7a59;
   margin-right: 10px;
 }
@@ -55,35 +55,36 @@ a {
 
 ul {
   list-style-type: none;
-  line-height: 1;
+  line-height: inherit;
 }
 
 li {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   color: inherit;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 35px;
+  margin-bottom: 15px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -179,10 +180,6 @@ header {
   margin: auto;
 }
 
-.section1-1>h2 {
-  margin-bottom: 15px;
-}
-
 .section1-2 {
   margin: 30px 0;
 }
@@ -200,27 +197,29 @@ header {
   margin: 30px 60px 30px 0;
 }
 
-.section1-2-right>a:nth-last-child(2) {
-  margin: 0 15px;
+.section1-2-right li{
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+.section1-2-right>ul {
+  margin-top: 15px;
 }
 
 .section1-2-right>p {
   margin: 15px 0;
 }
 
-.section1-2-right>div {
-  margin-top: 15px;
-}
-
 .section1-2-right>h4 {
   display: inline-block;
-  width: 150px;
+  width: 200px;
 }
 
 .section1-2-right hr {
   display: inline-block;
   margin-bottom: 0.3em;
-  width: calc(100% - 150px)
+  width: calc(100% - 200px)
 }
 
 .section1-3>.white-box {
@@ -247,19 +246,20 @@ header {
 .section1-3 ul {
   text-align: left;
   margin-bottom: 25px;
+  line-height: 1;
 }
 
 
 /* REGOLE SEZIONE DUE */
 
 .section2 {
-  background-color: lightblue;
-  padding: 30px 0;
+  background-image: linear-gradient(to top right, #00a4bc, #00bba5);
+  color: white;
+  padding: 30px 0 60px 0;
 }
 
 .section2-top {
-  height: 100px;
-  border: 1px solid black;
+  text-align: center;
 }
 
 .section2-top {
@@ -273,20 +273,34 @@ header {
 .row-block {
   float: left;
   width: calc(100% / 4);
-  height: 100px;
+  text-align: center;
+  padding: 10px
 }
 
 .row-block:nth-child(2) {
-  border-left: 1px solid black;
+  border-left: 1px solid white;
 }
 
 .row-block:nth-child(3) {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 
 .row1 {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
+}
+
+.row-block i {
+  font-size: 20px;
+}
+
+.row-block>div:nth-child(2) {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.row-block>div:last-child {
+  font-size: 12px;
 }
 
 /* REGOLE SEZIONE TRE */
