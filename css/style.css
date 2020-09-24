@@ -33,7 +33,6 @@ a {
   border-radius: 5px;
   padding: 10px;
   display: inline-block;
-
 }
 
 .white-box {
@@ -84,7 +83,7 @@ h4 {
   font-weight: 700;
 }
 
-p {
+p , h5 {
   font-size: 14px;
   font-weight: 600;
 }
@@ -336,26 +335,13 @@ header {
   float: left;
   width: 25%;
   min-width: 100px;
+  height: 70px;
 }
 
 .sponsor>img {
   width: 100%;
   padding: 10px;
 }
-
-/* regole per sistemare sponsor tagliati male*/
-
-.sponsor:nth-child(4) {
-  position: relative;
-  bottom: 10px;
-}
-
-.sponsor:nth-child(7)>img {
-  position: relative;
-  bottom: 15px;
-}
-
-/* Fine regole per sistemare sponsor tagliati male */
 
 .section3-bottom-left {
   float: left;
@@ -375,18 +361,31 @@ header {
   width: 100%
 }
 
+.section3-bottom-left>div {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
 /* REGOLE FOOTER */
 
 footer {
-  background-color: darkgrey;
-  padding-top: 30px;
+  background-color: #32495b;
+  padding-top: 35px;
+  color: #c3ceda;
+}
+
+footer h5 {
+  color: white;
+  padding-bottom: 20px;
+}
+
+footer a {
+  line-height: 30px;
 }
 
 .footer-top>div {
   float: left;
   width: calc((100% - 90px) / 4);
-  height: 150px;
-  border: 1px solid black;
   margin-right:30px;
 }
 
@@ -394,18 +393,30 @@ footer {
   margin-right: 0px;
 }
 
+.whi-but {
+  color: #32495b;
+  background-color: #c3ceda;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+#social>a {
+  font-size: 17px;
+  margin-right: 15px;
+}
+
 .languages {
   text-align: center;
   padding-bottom: 2px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #c3ceda;
   margin-top: 60px;
 }
 
-.languages>div {
+.languages>a {
   display: inline-block;
-  height: 30px;
-  width: 50px;
-  border: 1px solid black
+  margin: 0 10px 5px 0;
 }
 
 .footer-bottom{
@@ -413,14 +424,20 @@ footer {
   padding: 20px 0;
 }
 
-.footer-bottom>div {
-  height: 50px;
-  width: 100px;
-  border: 1px solid black;
+#copyright {
+  font-size: 10px;
 }
 
 .footer-bottom>div:last-child {
   position: absolute;
   right: 0;
   top: 20px;
+}
+
+#legal-privacy>a{
+  display: inline-block;
+}
+
+#legal-privacy>a:first-child {
+  padding-right: 20px;
 }
