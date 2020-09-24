@@ -24,6 +24,7 @@ a {
 .container {
   width: 60%;
   margin: auto;
+  min-width: 800px;
 }
 
 .ora-but {
@@ -295,7 +296,7 @@ header {
 }
 
 .row-block>div:nth-child(2) {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -306,40 +307,72 @@ header {
 /* REGOLE SEZIONE TRE */
 
 .section3 {
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .section3-top {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  padding: 0 7%;
 }
 
 .section3-top-left , .section3-top-right {
   float: left;
-  height: 100px;
-  border: 1px solid black;
 }
 
 .section3-top-left {
   width: 40%;
+  padding-right: 15%;
+}
+
+.section3-top-left>p {
+  margin-top: 30px;
 }
 
 .section3-top-right {
   width: 60%;
 }
 
-.section3-bottom-left , .section3-bottom-right {
-  height: 200px;
-  border: 1px solid black;
+.sponsor {
+  float: left;
+  width: 25%;
+  min-width: 100px;
 }
+
+.sponsor>img {
+  width: 100%;
+  padding: 10px;
+}
+
+/* regole per sistemare sponsor tagliati male*/
+
+.sponsor:nth-child(4) {
+  position: relative;
+  bottom: 10px;
+}
+
+.sponsor:nth-child(7)>img {
+  position: relative;
+  bottom: 15px;
+}
+
+/* Fine regole per sistemare sponsor tagliati male */
 
 .section3-bottom-left {
   float: left;
   width: 50%;
 }
 
+.section3-bottom-left>p , .section3-bottom-left>.ora-but{
+  margin: 15px 0;
+}
+
 .section3-bottom-right {
   float: right;
   width: 30%;
+}
+
+.section3-bottom-right>img {
+  width: 100%
 }
 
 /* REGOLE FOOTER */
