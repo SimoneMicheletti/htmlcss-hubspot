@@ -110,8 +110,16 @@ p , h5 {
 
 /* REGOLE NAV */
 
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 900;
+}
+
 .nav-top , .nav-bottom {
   height: 70px;
+  z-index: 500;
 }
 
 .nav-top-left , .nav-bottom-left {
@@ -218,6 +226,10 @@ p , h5 {
   padding: 8px 0;
 }
 
+.nav-bottom {
+  background-color: white;
+}
+
 .nav-bottom-right>* {
   display: inline-block;
   height: 15px;
@@ -239,6 +251,7 @@ p , h5 {
 /* REGOLE HEADER */
 
 header {
+  margin-top: 140px;
   background-color: #fff4ef;
   width: 100%;
   position: relative;
@@ -595,4 +608,100 @@ footer a {
 
 #legal-privacy>a:first-child {
   padding-right: 20px;
+}
+
+/* REGOLE CHAT */
+
+.chat {
+  position: fixed;
+  right: 15px;
+  bottom: 90px;
+  width: 20%;
+  min-width: 250px;
+  height: 500px;
+  margin-right: 15px;
+  padding-bottom: 100px;
+  background-color: white;
+  border-radius: 15px;
+  font-size: 14px;
+  border: 1px solid #32495b;
+  display: none;
+}
+
+.chat-top {
+  background-color: #32495b;
+  height: 100px;
+  border-radius: 15px 15px 0 0;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-top: 35px;
+}
+
+.chat-top>i {
+  color: #ff7a59;
+}
+
+.chat-main {
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+  padding: 30px;
+}
+
+.chat-bottom {
+  padding: 10px;
+  color: #32495b;
+}
+
+.chat-bottom i {
+  font-size: 18px;
+  padding: 0 3px;
+}
+
+#chat-area {
+  border: 1px solid #c3ceda;
+  padding: 2px;
+  width: calc(100% - 70px);
+}
+
+.chat-bottom>hr {
+  margin: 10px 0;
+  color: #32495b;
+}
+
+.add-chat {
+  text-align: center;
+  font-size: 12px;
+}
+
+.add-chat>i , .add-chat>a {
+  color: #ff7a59;
+  font-size: 12px;
+}
+
+#prova {
+  width: 60px%;
+  height: 60px;
+  margin-bottom: 15px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+#chat-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #32495b;
+  color: #c3ceda;
+  border-radius: 50%;
+  border: 1px solid #c3ceda;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  margin-top: 15px;
+  right: 0;
+}
+
+.chat-macro:hover .chat {
+  display: block;
 }
