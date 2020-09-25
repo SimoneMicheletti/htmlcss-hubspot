@@ -35,9 +35,9 @@ a {
   background-color: #ff7a59;
   border-radius: 5px;
   font-weight: 800;
-  font-size: 12px;
+  font-size: 14px;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 20px 40px;
 }
 
 nav .ora-but {
@@ -398,7 +398,7 @@ header {
   float: left;
   width: calc(100% / 4);
   text-align: center;
-  padding: 20px 20px 20px 20px;
+  padding: 30px;
 }
 
 .row-block:nth-child(2) {
@@ -471,6 +471,7 @@ header {
 .section3-bottom-left {
   float: left;
   width: 50%;
+  padding-top: 60px;
 }
 
 .section3-bottom-left>p , .section3-bottom-left>.ora-but{
@@ -490,6 +491,28 @@ header {
   font-size: 12px;
   margin-top: 15px;
 }
+
+/* fix sponsor */
+
+.sponsor:nth-child(1) img {
+  padding-top: 30px;
+}
+.sponsor:nth-child(2) img {
+  padding-top: 30px;
+}
+.sponsor:nth-child(3) img {
+  padding-top: 20px;
+}
+.sponsor:nth-child(5) img {
+  padding-top: 15px;
+}
+.sponsor:nth-child(6) img {
+  padding-top: 25px;
+}
+.sponsor:nth-child(8) img {
+  padding-top: 20px;
+}
+
 
 /* REGOLE FOOTER */
 
@@ -525,6 +548,13 @@ footer a {
   padding: 10px;
   display: inline-block;
   margin: 15px 0;
+  font-weight: 800;
+}
+
+.whi-but:hover {
+  color: #c3ceda;
+  background-color: #00a4bc;
+  text-decoration: inherit;
 }
 
 #social>a {
